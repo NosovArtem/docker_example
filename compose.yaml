@@ -23,11 +23,13 @@ services:
     networks:
     - my-network
 
-  # grafana:
-  #   image: grafana/grafana
-  #   container_name: graf
-  #   ports:
-  #     - 3000:3000
+  grafana:
+   image: grafana/grafana
+   container_name: graf
+   ports:
+     - 3000:3000
+   networks:
+   - my-network
 
 
 networks:
